@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: black;
+}
+header h1{
+    position: relative;
+    animation-name: ved;
+    animation-duration: 2.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: rgb(215, 230, 16);
+    text-align: center;
+    color: black;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+@keyframes ved{
+    from{
+        width: 0px;
+        height: 200px;
+        background-color: rgb(107, 206, 206);
+    }
+    to{
+        text-decoration: underline;
+        width: 100%;
+        height: 100px;
+        padding-top: 60px;
+    }
+}
+.navbar{
+    background-color: lightgray;
+    height: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+} 
+.navbar li a{
+    color: black;
+    padding: 125px;
+    text-decoration: none;
+} 
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 525;
+}
+section{
+    width: 1519px;
+    height: 1080px;
+    background-image: linear-gradient(red,rgb(228, 15, 182),blue);
+}
+.container{
+    /* position: relative; */
+    animation-name: ved2;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    /* text-align: center; */
+    color: black;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+@keyframes ved2{
+    from{
+        width: 0px;
+        height: 150px;
+        transform: translateY(100%);
+        background-color: rgb(107, 206, 206);
+    }
+    to{
+        text-decoration: none;
+        width: 100%;
+        height: 60px;
+        padding-top: 20px;
+    }
+}
+.gta5Minecraft{
+    display: flex;
+    justify-content: space-evenly;
+    word-spacing: 4px;
+    line-height: 1.5;
+}
+.gta5{
+    background-color: #000101;
+    height: 400px;
+    width: 610px;
+    margin: auto;
+    margin-top: 100px;
+    image-rendering: optimizeQuality;
+    text-align: center;
+}
+.gta5 img{
+    margin-top: 25px;
+}
+.gta5:hover{
+    color: black;
+    background-color: #9d9de0;
+    /* animation-duration: 5s; */
+    cursor: pointer;
+    transition: 0.4s;
+}
+.gta5:hover a{
+    color: black;
+}
+.gta5:hover strong i{
+    color: black;
+}
+
+
+.Minecraft{
+    background-color: blue;   
+    height: 400px;
+    width: 610px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    background-color: black;
+}
+.Minecraft img{
+    margin-top: 25px;
+    width: 318px;
+    height: 159px;
+}
+.Minecraft:hover{
+    background-color: #31ca12;
+    color: black;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+}
+.Minecraft:hover strong i{
+    color: black;
+}
+.Minecraft:hover a{
+    color: black;
+}
+
+
+.pubgValo{
+    display: flex;
+    justify-content: space-evenly;
+    word-spacing: 4px;
+    line-height: 1.5;
+}
+.pubg{
+    background-color: #000101;
+    height: 400px;
+    width: 610px;
+    margin: auto;
+    margin-top: 100px;
+    image-rendering: optimizeQuality;
+    text-align: center;
+}
+.pubg:hover{
+    background-color: #fcf5e0;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.pubg:hover strong i{
+    color: #000101;
+}
+.pubg:hover a{
+    color: #000101;
+}
+.pubg img{
+    margin-top: 25px;
+    width: 318px;
+    height: 159px;
+}
+.Valo{
+    background-color: #000101;
+    height: 400px;
+    width: 610px;
+    margin: auto;
+    margin-top: 100px;
+    image-rendering: optimizeQuality;
+    text-align: center;    
+}
+.Valo img{
+    margin-top: 25px;
+    width: 318px;
+    height: 159px;
+}
+.Valo:hover{
+    background-color: #03f4df;
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.Valo:hover strong i{
+    color: black;
+}
+.Valo:hover a{
+    color: black;
+}
+@media (max-width:300px){
+    .navbar{
+        width: 550px;
+        display: flex;
+        justify-content: flex-start;
+    } 
+    header{
+        width: 550px;
+    }
+    .gta5Minecraft{
+        /* float: left; */
+        display: block;
+        background-image: linear-gradient(red,rgb(228, 15, 182),blue);
+        max-width: 300px;
+    }
+    .pubgValo{
+        /* float: left; */
+        display: block;
+        background-image: linear-gradient(red,rgb(228, 15, 182),blue);
+        max-width: 300px;
+    }
+}
+@media (min-width:300px) and (max-width:500px){
+    /* .navbar{
+        display: block;
+    } */
+    header , .navbar{
+        width: 882px;
+    }
+    .gta5Minecraft{
+        display: block;
+        background-image: linear-gradient(red,rgb(228, 15, 182),blue);
+    }
+    .pubgValo{
+        display: block;
+        background-image: linear-gradient(red,rgb(228, 15, 182),blue);
+    }
+}
+.social{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+.links{
+    display: flex;
+    margin: 80px;
+    justify-content: space-evenly;
+}
+.links img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+.panel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question-container{
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 10vh;
+    background-color: #c7dddf;
+    font-size: x-large;
+    text-align: center;
+    color: #000101;
+}
+.result{
+    margin: 10px;
+    padding: 5px;
+    width:80vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 50px;
+      
+}
+.option-container{
+    display: flex;
+    justify-content: space-around; 
+    margin: 10px;
+    padding: 5px;
+    width: 80vw;
+    height: 20vh;
+    background-color: #9eb1b3;   
+        
+}
+.option{    
+    padding: 10px;
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    background-color: lightskyblue;
+    border-radius: 25%;
+}
+.option:hover{
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+.navigation{
+    width: 80vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color:#c7dddf;
+}
+  
+.evaluate,.next{
+    width:30vw;
+    height: 8vh;
+    padding: 5px;
+    font-size: larger;
+}
+.evaluate{
+    
+    background-color: #50DBB4;
+}
+.next{
+    color: white;
+    background-color: #BF3325;
+}
